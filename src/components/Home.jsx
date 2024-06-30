@@ -43,8 +43,8 @@ function Home({ homeRef, typedRef }) {
           <a href="https://github.com/soumya-khuntia" target="_blank" rel="noopener noreferrer">
             <i className="bx bxl-github"></i>
           </a>
-          <a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">
-            <i className="bx bxl-twitter"></i>
+          <a href="mailto:soumyaranjankhuntia82@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i className='bx bxl-gmail'></i>
           </a>
           <a href="https://www.linkedin.com/in/soumya-ranjan-khuntia/" target="_blank" rel="noopener noreferrer">
             <i className="bx bxl-linkedin-square"></i>

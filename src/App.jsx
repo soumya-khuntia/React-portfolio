@@ -26,6 +26,8 @@ function App() {
             distance: '80px',
             duration: 2000,
             delay: 200,
+            mobile: false,
+            easing: 'ease-in-out',
         });
 
         sr.reveal('.home-content, .heading, .heading1', { origin: 'top' });
