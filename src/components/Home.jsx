@@ -50,7 +50,7 @@ function Home({ homeRef, typedRef }) {
             <i className="bx bxl-linkedin-square"></i>
           </a>
         </div>
-        <a href="documents/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn">
+        <a href="documents/soumya resume.pdf" target="_blank" rel="noopener noreferrer" className="btn">
           Download Resume
         </a>
       </div>
