@@ -26,14 +26,13 @@ function App() {
             distance: '80px',
             duration: 2000,
             delay: 200,
-            mobile: false,
             easing: 'ease-in-out',
         });
 
-        sr.reveal('.home-content, .heading, .heading1', { origin: 'top' });
+        sr.reveal('.home-content, .heading, .heading1', { origin: 'bottom' });
         sr.reveal('.home-image, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
-        sr.reveal('.home-content h1, .about img, .technical-bar', { origin: 'left' });
-        sr.reveal('.home-content p, .about-content, .radial-bar', { origin: 'right' });
+        sr.reveal('.home-content h1, .about img, .technical-bar', { origin: 'bottom' });
+        sr.reveal('.home-content p, .about-content, .radial-bar', { origin: 'bottom' });
 
         const typedElement = typedRef.current;
         if (typedElement) {
