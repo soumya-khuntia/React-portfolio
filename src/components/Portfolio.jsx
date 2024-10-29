@@ -11,10 +11,10 @@ function Portfolio({ portfolioRef }) {
         <div className="portfolio-box">
           <img src="images/portfolio1.jpg" alt="" />
           <div className="portfolio-layer">
-            <h4>Scientific Calculator</h4>
+            <h4>Smart Calculator</h4>
             <p>
-              Developing a cutting-edge scientific calculator with advanced functions and a user-friendly interface to
-              enhance precision and efficiency in scientific computations.
+              An intelligent handwriting calculator that transforms your mathematical expressions into instant solutions
+               using Google Gemini AI, complete with a sleek drawing interface and dynamic LaTeX rendering.
             </p>
             <a href="https://soumya-khuntia.github.io/scientific-calculator" target="_blank" rel="noopener noreferrer">
               <i className="bx bx-link-external"></i>
@@ -63,7 +63,7 @@ function Portfolio({ portfolioRef }) {
         <div className="portfolio-box">
           <img src="images/portfolio5.jpg" alt="" />
           <div className="portfolio-layer">
-            <h4>Yt-playlist Downloader</h4>
+            <h4>Digitalnotes Website</h4>
             <p>
               Designed with Python and Streamlit, my YouTube playlist downloader simplifies the process of fetching and
               saving your favorite videos for offline viewing, ensuring seamless access to your media.
