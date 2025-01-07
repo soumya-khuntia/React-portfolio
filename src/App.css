@@ -342,267 +342,71 @@ span {
 }
 
 /* My skills */
-.sec {
-    display: flex;
-    /* flex-wrap: wrap; */
-    padding-top: 5px;
+.skills {
+    min-height: auto;
+    padding-bottom: 7rem;
     background: var(--second-bg-color);
-}
-
-.sec .container1 {
-    width: 600px;
-    padding: 75px 90px;
-}
-
-.sec .heading1 {
-    text-align: center;
-    font-size: xx-large;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-    margin-bottom: 50px;
-}
-
-/* Technical skills */
-.sec .technical-bar .bar {
-    margin-top: 40px;
-    font-size: 23px;
-}
-
-.sec .technical-bar .bar:first-child {
-    margin-top: 0;
-}
-
-.sec .technical-bar .bar:last-child {
-    margin-bottom: 0;
-}
-
-.sec .technical-bar .bar .info {
-    margin-bottom: 5px;
-}
-
-.sec .technical-bar .bar .info span {
-    font-size: 17px;
-    font-weight: 500;
-    animation: showtext 0.1s 1s linear forwards;
-    opacity: 0;
-}
-
-.sec .technical-bar .bar .progress-line {
-    position: relative;
-    border-radius: 10px;
-    width: 100%;
-    height: 5px;
-    background-color: var(--text-color);
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-@keyframes animate {
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-.sec .technical-bar .bar .progress-line span {
-    height: 100%;
-    background-color: var(--main-color);
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-.sec .technical-bar .bar .progress-line.html span {
-    width: 90%;
-}
-
-.sec .technical-bar .bar .progress-line.css span {
-    width: 80%;
-}
-
-.sec .technical-bar .bar .progress-line.javascript span {
-    width: 80%;
-}
-
-.sec .technical-bar .bar .progress-line.python span {
-    width: 85%;
-}
-
-.sec .technical-bar .bar .progress-line.react span {
-    width: 75%;
-}
-
-.progress-line span::after {
-    position: absolute;
-    padding: 1px 8px;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: -20px;
-    animation: showtext 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-
-.progress-line.html span::after {
-    content: "90%";
-}
-
-.progress-line.css span::after {
-    content: "80%";
-}
-
-.progress-line.javascript span::after {
-    content: "80%";
-}
-
-.progress-line.python span::after {
-    content: "85%";
-}
-
-.progress-line.react span::after {
-    content: "75%";
-}
-
-.progress-line span::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0;
-    border-right-width: 0;
-    border-top-color: var(--bg-color);
-    top: -10px;
-    right: 0;
-    animation: showtext 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-
-@keyframes showtext {
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Professional Skills */
-.sec .container1 .radial-bars {
-    width: 100%;
+  }
+  
+  .skills h2 {
+    margin-bottom: 5rem;
+  }
+  
+  .skills-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.radial-bars .radial-bar {
-    width: 50%;
-    height: 170px;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.radial-bars .radial-bar svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    width: 120px;
-    height: 160px;
-}
-
-.radial-bars .radial-bar .progress-bar {
-    stroke-width: 10;
-    stroke: var(--text-color);
-    stop-color: black;
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-    animation: animate-bar 1s linear forwards;
-}
-
-@keyframes animate-bar {
-    100% {
-        stroke-dashoffset: -1;
-    }
-}
-
-.path {
-    stroke-width: 10;
-    stroke: var(--main-color);
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-}
-
-.path-1 {
-    animation: animate-path1 1s 1s linear forwards;
-}
-
-.path-2 {
-    animation: animate-path2 1s 1s linear forwards;
-}
-
-.path-3 {
-    animation: animate-path3 1s 1s linear forwards;
-}
-
-.path-4 {
-    animation: animate-path4 1s 1s linear forwards;
-}
-
-@keyframes animate-path1 {
-    100% {
-        stroke-dashoffset: 170;
-    }
-}
-
-@keyframes animate-path2 {
-    100% {
-        stroke-dashoffset: 100;
-    }
-}
-
-@keyframes animate-path3 {
-    100% {
-        stroke-dashoffset: 50;
-    }
-}
-
-@keyframes animate-path4 {
-    100% {
-        stroke-dashoffset: 150;
-    }
-}
-
-.radial-bar .percentage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 17px;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--main-color);
+  }
+  
+  .skill-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: .8rem;
+    transition: .5s ease;
+  }
+  
+  .skill-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .skill-box i {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-box span {
+    font-size: 1.8rem;
     font-weight: 500;
-    animation: showtext 0.5s 1s linear forwards;
-    opacity: 0;
-}
-
-.radial-bar .text {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    bottom: -5px;
-    transform: translateX(-50px);
-    font-size: 17px;
-    font-weight: 500;
-    animation: showtext 0.5s 1s linear forwards;
-    opacity: 0;
-}
+  }
+  
+  @media (max-width: 617px) {
+    .skills-container {
+      padding: 1.5rem;
+    }
+    
+    .skill-box {
+      padding: 1.5rem;
+    }
+    
+    .skill-box i {
+      font-size: 3.5rem;
+    }
+    
+    .skill-box span {
+      font-size: 1.5rem;
+    }
+  }
+  
 
 
 /* portfolio section */

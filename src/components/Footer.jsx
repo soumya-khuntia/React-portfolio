@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-text">
-        <p>Copyright &copy; 2024 by SRK | All Rights Reserved.</p>
+        <p>Copyright &copy; 2025 by SRK | All Rights Reserved.</p>
       </div>
       <div className="footer-icontop">
         <a href="#" onClick={scrollToTop}>
