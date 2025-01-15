@@ -353,26 +353,28 @@ span {
   }
   
   .skills-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    background: var(--bg-color);
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem var(--main-color);
+    display: grid; /* Change from flex to grid */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Create responsive grid */
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--bg-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem var(--main-color);
   }
   
   .skill-box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 2rem;
     border-radius: .8rem;
     transition: .5s ease;
+    height: 100%;
   }
   
   .skill-box:hover {

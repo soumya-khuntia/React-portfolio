@@ -16,7 +16,7 @@ function Qualification({ qualificationRef }) {
               <h3>Bachelor of technology</h3>
               <p>
                 I am currently pursuing my Bachelor of technology in DRIEMS University in coumputer science and
-                engineering with 9.02 Cgpa.
+                engineering with 9.05 Cgpa.
               </p>
             </div>
             <div className="flip-card-back">

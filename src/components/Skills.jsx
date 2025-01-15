@@ -18,11 +18,19 @@ function Skills({ skillsRef }) {
           <span>JavaScript</span>
         </div>
         <div className="skill-box">
+          <i className="bx bxl-react" style={{ color: '#6969bcbc' }}></i>
+          <span>React</span>
+        </div>
+        <div className="skill-box">
           <i className="bx bxl-typescript" style={{ color: '#007acc' }}></i>
           <span>TypeScript</span>
         </div>
         <div className="skill-box">
-          <i className="bx bxl-python" style={{ color: '#c32ec9' }}></i>
+          <i className="bx bxl-tailwind-css" style={{ color: '#38bdf8' }}></i>
+          <span>Tailwind CSS</span>
+        </div>
+        <div className="skill-box">
+          <i className="bx bxl-python" style={{ color: '#7b098f' }}></i>
           <span>Python</span>
         </div>
         <div className="skill-box">
@@ -30,12 +38,8 @@ function Skills({ skillsRef }) {
           <span>Flask</span>
         </div>
         <div className="skill-box">
-          <i className="bx bxl-react" style={{ color: '#6969bcbc' }}></i>
-          <span>React</span>
-        </div>
-        <div className="skill-box">
-          <i className="bx bxl-tailwind-css" style={{ color: '#38bdf8' }}></i>
-          <span>Tailwind CSS</span>
+          <i className="bx bxl-django" style={{ color: '#038c17' }}></i>
+          <span>Django</span>
         </div>
         <div className="skill-box">
           <i className="bx bxl-wordpress" style={{ color: '#21759b' }}></i>
@@ -45,7 +49,10 @@ function Skills({ skillsRef }) {
           <i className="bx bxl-mongodb" style={{ color: '#47A248' }}></i>
           <span>MongoDB</span>
         </div>
-        
+        <div className="skill-box">
+          <i className="bx bxl-github" style={{ color: '#000000' }}></i>
+          <span>Github</span>
+        </div>        
       </div>
     </section>
   );
